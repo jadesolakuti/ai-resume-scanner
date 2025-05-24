@@ -1,4 +1,4 @@
-# Resume Scanner App
+# Resume Scanner App.
 
 This is a simple Flask web application that compares a resume to a job description using AI. It returns a similarity score and feedback on how well the resume matches the job description.
 
