@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume Scanner by Jadesola</title>
+        <style>
+            body{
+                margin: 0;                
+                background-color: white;
+                overflow-x: hidden;
+            }
+            #bod{
+                background-color:  rgb(128, 19, 19);
+                color: white;
+                margin: 0;
+                height: 100%; 
+                width: 100%;
+                
+            }
+            .formcontainer{
+                margin:auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: calc(100vh - 160px);
+            }
+            #resumeform{                
+                background-color: white;
+                color:black;
+                padding: 20px;
+                width: 70vw;
+                height: 500px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                
+            }
+            #button{
+                background-color: rgb(128, 19, 19);
+                border-radius: 5px;
+                height: 40px;
+                width: 100px;
+                color: white;
+                /* font-family: "Brush Script MT"; */
+                font-size: large;
+            }
+            header{
+                width:100%;
+                text-align: center;
+                color: black;
+                padding: 15px;
+                border-radius: 20px;
+            }
+            textarea{
+                width: 60vw;
+                height: 300px;
+            }
+            #scorebox{
+                width: 200px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 15px;
+                font-size: large;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgb(128, 19, 19);
+            }
+        </style>
+    </head>
+<body>
+    <header><h1>AI Powered Resume Scanner</h1></header>
+    <div id="bod">
+    <div class="formcontainer">   
+        {% block form %} {% endblock %}
+    </div>
+
+    </div>  
+    <footer style="text-align: center;">
+        <p>By Jadesola Kuti 2025</p>
+    </footer>  
+</body>
+
+</html>
