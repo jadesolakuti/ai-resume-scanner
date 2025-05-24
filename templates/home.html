@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block form %} 
+        <form action="{{ url_for('analyze') }}" id="resumeform" method="POST" enctype="multipart/form-data">        
+            <label>Enter the job description below</label>
+            <textarea name="job_description" required></textarea><br><br>
+            <fieldset>
+                <legend>Upload your Resume</legend>
+                <input type="file" name="resume" accept="application/pdf" required>
+            </fieldset><br>
+            <div>
+                <input type="submit" value="UPLOAD" id="button">
+                <input type="reset" value="RESET" id="button">
+            </div>
+            
+        </form>
+{% endblock %}    
